@@ -5,7 +5,7 @@ import ProfileImg from "./ProfileImg";
 
 export default class Heading extends Component {
   state = {
-    textColor: "white"
+    textColor: "var(--mainGrey)"
   };
 
   render() {
