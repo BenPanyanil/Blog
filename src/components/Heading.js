@@ -1,23 +1,16 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 import HeaderText from "./HeaderText";
 import ProfileImg from "./ProfileImg";
 
 export default class Heading extends Component {
-  state = {
-    textColor: "var(--mainGrey)"
-  };
-
   render() {
     return (
-      <HeadingWrapper className="container">
-        <div className="row mt-xl-4">
-          <HeaderText textColor={this.state.textColor} />
+      <div className="container">
+        <div className="row mt-lg-4">
+          <HeaderText />
           <ProfileImg />
         </div>
-      </HeadingWrapper>
+      </div>
     );
   }
 }
-
-const HeadingWrapper = styled.div``;

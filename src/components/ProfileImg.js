@@ -4,7 +4,7 @@ import myPic from "../myPic.jpg";
 
 export default function ProfileImg() {
   return (
-    <ProfileImgWrapper className="col-sm-10 col-lg-6">
+    <ProfileImgWrapper className="col-sm-12 col-lg-6">
       <div className="myPic w-100">
         <div className="img-shadow"></div>
         <img src={myPic} alt="myPic"></img>

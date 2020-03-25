@@ -9,11 +9,32 @@
   font-family: "Montserrat", sans-serif !important;
 }
 
-.headingBG {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--mainBlack);
+body {
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+.homePage {
+  background-color: var(--mainBlack) !important;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.homePage.animate-bg-white {
+  background-color: transparent !important;
+}
+
+.headerTitle,
+.headerText {
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.headerTitle.animate-bg-white,
+.headerText.animate-bg-white {
+  color: var(--mainBlack) !important;
+}
+
+nav {
+  z-index: 2 !important;
 }

@@ -9,9 +9,14 @@ export default class NavBar extends Component {
 
   render() {
     return (
-      <NavWrapper className="container mt-5 py-3 py-sm-5">
-        <ul className="col-sm-10">
+      <NavWrapper className="container py-3 py-sm-5">
+        <ul className="navTop col-sm-10 pt-5">
           <li className="d-inline-block">
+            <Link to="/" style={{ color: this.state.textColor }}>
+              Home
+            </Link>
+          </li>
+          <li className="d-inline-block ml-4 ml-sm-5">
             <Link to="/blog" style={{ color: this.state.textColor }}>
               Blog
             </Link>
@@ -28,8 +33,6 @@ export default class NavBar extends Component {
 }
 
 const NavWrapper = styled.nav`
-  background: transparent;
-
   ul {
     padding: 0;
     margin: 0;

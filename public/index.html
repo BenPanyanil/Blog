@@ -28,5 +28,18 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      const body = document.querySelector("body");
+
+      window.addEventListener("scroll", function() {
+        const rect = body.getBoundingClientRect();
+
+        if (rect.top < -46) {
+          body.classList.add("animate-bg-white");
+        } else {
+          body.classList.remove("animate-bg-white");
+        }
+      });
+    </script>
   </body>
 </html>
