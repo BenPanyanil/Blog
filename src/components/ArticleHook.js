@@ -39,5 +39,14 @@ const ArticleHookWrapper = styled.div`
     color: white;
     font-weight: bold;
     margin-left: 15px;
+
+    transition-duration: 200ms;
+    transform: translate(0px, 0px);
+    box-shadow: 0px 0px 0 var(--mainBlack);
+  }
+
+  .btnStyle:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 0 var(--mainBlack);
   }
 `;
