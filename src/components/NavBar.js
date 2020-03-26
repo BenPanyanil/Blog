@@ -22,8 +22,8 @@ export default class NavBar extends Component {
             </Link>
           </li>
           <li className="d-inline-block ml-4 ml-sm-5">
-            <Link to="/portfolio" style={{ color: this.state.textColor }}>
-              Portfolio
+            <Link to="/contact" style={{ color: this.state.textColor }}>
+              Contact
             </Link>
           </li>
         </ul>

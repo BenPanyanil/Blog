@@ -19,8 +19,6 @@ export default class ArticleHook extends Component {
 }
 
 const ArticleHookWrapper = styled.div`
-  border-bottom: 1px solid var(--mainGrey);
-
   .dateStyle {
     font-size: 0.9rem;
     opacity: 0.6;
