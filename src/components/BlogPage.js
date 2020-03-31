@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
-import { Link } from "react-router-dom";
 import { ContextConsumer } from "../context";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-import NavBar from "./NavBar";
 import Heading from "./Heading";
 import styled from "styled-components";
 import ArticleHook from "./ArticleHook";
@@ -41,25 +37,13 @@ export default class HomePage extends Component {
 
     return (
       <div className="homePage" ref={this.backgroundRef}>
-        <NavBar />
         <Heading />
         <BodyWrapper className="container mt-5">
           <div className="row">
-            <h1 className="my-5 pt-5 col-sm-12 font-weight-bold">
-              Hi, I'm
-              <span style={{ color: "var(--mainPurple)" }}> Ben Panyanil</span>,
-              a freelance web-developer and blogger.
-            </h1>
-            <p className="mt-3 pb-5 mb-5 col-sm-12">
-              A certain king had a beautiful garden, and in the garden stood a
-              tree which bore golden apples. These apples were always counted,
-              and about the time when they began to grow ripe it was found that
-              every night one of them was gone.
-            </p>
             <ContextConsumer>
               {value => (
                 <>
-                  <h2 className="allblogs-header col-sm-12 mt-3 pt-5">
+                  <h2 className="latestblog-header col-sm-12 mt-3 pt-5">
                     My latest blog post
                   </h2>
                   <LatestArticleHook />
@@ -81,13 +65,18 @@ const BodyWrapper = styled.div`
   line-height: 2rem;
   color: var(--mainBlack);
 
-  h1 {
+  h2 {
     line-height: 4rem;
+    font-weight: bold;
+  }
+
+  .latestblog-header {
+    color: var(--mainBlack);
   }
 
   .allblogs-header {
     border-top: 1px solid var(--mainGrey);
-    opacity: 0.4;
+    color: var(--mainBlack);
   }
 
   a {

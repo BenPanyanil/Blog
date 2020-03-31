@@ -46,11 +46,7 @@ export default class HeaderText extends Component {
               style={{ lineHeight: "1.8rem" }}
             >
               Welcome to my blog. Here I share my stories, obstacles and means
-              to become a succesful freelance developer and{" "}
-              <span style={{ color: "var(--mainRed" }}>
-                achieving the freedom of a freelancer
-              </span>
-              .
+              to become a succesful freelance developer and .
             </p>
           </section>
         </>
